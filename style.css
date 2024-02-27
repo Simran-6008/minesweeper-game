@@ -35,4 +35,17 @@ body{
         grid-template-columns: repeat(10, 30px);
         grid-template-rows: repeat(10, 30px);
     }
+    .gameOver > h1{
+        font-size: 1em;
+    }
+    .text{
+        font-size: 0.8em;
+    }
+    .cells{
+        border: 1px solid black;
+        min-height: 30px;
+        width: 100%;
+        background-color: palevioletred;
+        text-align: center;
+    }
 }
