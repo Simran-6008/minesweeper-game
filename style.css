@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color: antiquewhite;
+}
+.container{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: repeat(10, 50px);
+    justify-content: center;
+}
+.cells{
+    border: 1px solid black;
+    min-height: 50px;
+    width: 100%;
+    background-color: palevioletred;
+}
+.text{
+    font-weight: 400;
+}
+.gameOver{
+    position: absolute;
+    top: 34%;
+    right: 34%;
+    background-color: aliceblue;
+    padding: 5%;
+    display: none;
+}
+.gameOver > h1{
+    font-size: 3em;
+}
+
+@media (min-width: 375px){
+    .container{
+        width: 80%;
+        grid-template-columns: repeat(10, 30px);
+        grid-template-rows: repeat(10, 30px);
+    }
+}
